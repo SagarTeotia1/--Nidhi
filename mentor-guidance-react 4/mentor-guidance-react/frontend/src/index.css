@@ -1,0 +1,57 @@
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    background: black;
+    -webkit-animation: slide-down 5s 3;
+    animation: slide-down 5s 3;
+}
+
+.visually-hidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    line-height: 28px;
+    overflow-x: hidden;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    margin-top: 0;
+    font-weight: 600;}

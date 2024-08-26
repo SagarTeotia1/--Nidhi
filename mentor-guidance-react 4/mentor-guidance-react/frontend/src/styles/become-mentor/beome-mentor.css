@@ -1,0 +1,260 @@
+
+
+
+
+.become-mentor-container{
+  
+    background-color: #fff;
+    }
+
+.mentor-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #fff;
+    flex-wrap: wrap-reverse;
+
+}
+
+.mentor-text {
+    width: 60%;
+}
+
+.mentor-text h1 {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.mentor-text > p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.info-bubble {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-bubble p{
+    border-right:2px solid #888;
+    font-size:14px;
+    color:#555;
+   padding:0  5px;
+}
+
+ 
+
+.mentor-image {
+    position: relative;
+    width:30%
+}
+
+.mentor-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/*form css ===================================================================*/
+/* Container */
+.form-container{
+    background-image: url("/images/form-background.jpeg");
+    
+    background-size:cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding:30px 0;
+   
+}
+
+.mentor-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.mentor-form > h2 {
+    text-align: center;
+    color: #1c1e3e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #888;
+}
+
+/* Profile Picture */
+.mentor-form > form > .profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.mentor-form > form > .profile-picture > input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius:30px;
+    padding:15px 30px;
+}
+
+/* Form Groups */
+.mentor-form > form > .form-group {
+    margin-bottom: 15px;
+}
+
+.mentor-form > form > .form-group > label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1c1e3e;
+    font-weight:bold;
+}
+
+.mentor-form > form > .form-group > input[type="url"],
+.mentor-form > form > .form-group > input[type="text"],
+.mentor-form > form > .form-group > textarea,
+.mentor-form > form > .form-group > select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    border-radius:30px;
+    padding:15px 30px;
+}
+
+.mentor-form > form > .form-group > textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Gender Group */
+.mentor-form > form > .gender-group > .gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mentor-form > form > .gender-group > .gender-options > input[type="radio"] {
+    display: none;
+}
+
+.mentor-form > form > .gender-group > .gender-options > label.gender-label {
+    display: inline-block;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.mentor-form > form > .gender-group > .gender-options > label.gender-label:hover {
+    background-color: #e9e9e9;
+}
+
+.mentor-form > form > .gender-group > .gender-options > input[type="radio"]:checked + .gender-label {
+    background-color: #1515de;
+    color: #fff;
+    border-color: #1515de;
+}
+
+/* Styles for the selected languages container */
+
+.selected-languages {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* Styles for individual language tags */
+.language-tag {
+    background-color: #1515de;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.language-tag .remove-language {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+/* Submit Button */
+.mentor-form > form > button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1515de;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.mentor-form > form > button[type="submit"]:hover {
+    background-color: #1a1aff;
+}
+
+
+@media (max-width: 768px) {
+    .mentor-section{
+        flex-direction: column;
+    }
+
+    .mentor-form {
+        padding: 15px;
+    }
+
+    .mentor-form > form > button[type="submit"] {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .mentor-text{
+        width:100%;
+    }
+
+    .mentor-image{
+        width:100%
+    }
+
+}
+
+
+.mentor-form * {
+    box-sizing: border-box;
+}
+
+.mentor-form select,
+.mentor-form input,
+.mentor-form textarea,
+.mentor-form button {
+    font-family: inherit;
+}
+
+@media(max-width:360px){
+   .mentor-text h1{
+    font-size: 2rem;
+   }
+}
